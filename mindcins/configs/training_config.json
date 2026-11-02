@@ -1,0 +1,46 @@
+{
+  "backbone": "Qwen/Qwen2.5-7B-Instruct",
+  "method": "QLoRA SFT",
+  "quantization": "4-bit NF4, double quantization",
+  "compute_dtype": "BF16",
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "epochs": 3,
+  "learning_rate": 0.0001,
+  "per_device_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "effective_batch_size": 8,
+  "scheduler": "cosine",
+  "warmup_ratio": 0.1,
+  "optimizer": "paged AdamW 8-bit",
+  "max_sequence_length": 1024,
+  "training_seed": 20260921,
+  "loss_masking": "final assistant response only",
+  "gradient_checkpointing": true,
+  "checkpoint_selection": "validation loss; best model loaded at end",
+  "conditions": {
+    "MindCINS-4K": {
+      "train": 3200,
+      "validation": 800,
+      "evaluated_checkpoint": "checkpoint-800"
+    },
+    "MindCINS-6K": {
+      "train": 4800,
+      "validation": 1200,
+      "evaluated_checkpoint": "checkpoint-1200"
+    }
+  },
+  "note": "4K and 6K were trained independently from the same backbone; 6K was not continued from 4K."
+}

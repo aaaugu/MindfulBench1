@@ -1,0 +1,27 @@
+{
+  "project": "MindfulBench + MindCINS",
+  "candidate_version": "RC4-full-data",
+  "created_on": "2026-11-01",
+  "actual_publication_status": "PREPARED_FOR_USER_UPLOAD",
+  "planned_post_evaluation_gold_policy": "PUBLIC_TEST_GOLD_AFTER_HISTORICAL_SEALED_RUN",
+  "mode": "full_data_repository_candidate",
+  "benchmark_case_counts": {
+    "dev": 180,
+    "test": 540,
+    "minimal_pairs_dev": 30,
+    "minimal_pairs_test": 90
+  },
+  "data_files_included": true,
+  "license_status": "NOT_GRANTED_BY_THIS_PACKAGE",
+  "rights_status": "PSYQA_DERIVATIVE_REDISTRIBUTION_NOT_VERIFIED",
+  "repository_url": null,
+  "release_tag": null,
+  "doi": null,
+  "historical_source_authorities_sha256": {
+    "MindBEN_Formal720_DEV180_v1_1.jsonl": "eec502d0b3fde2c80f265454f12f41ca28eb3f84738ea3abd7a7f9702ea634e9",
+    "MindBEN_Formal720_SEALED_TEST540_v1_1.jsonl": "d802cb66c9b6c57b055a6ec5b3227f88822ff1bb5cff4ae87e8395cb868bc2be",
+    "MindBEN_EvaluationProtocol_v1_2_FROZEN.md": "b47b6e1143dba1471098b723627eb16b634a2f48ce25efed0d13d42f00e53c92"
+  },
+  "historical_judge_backend_exact_revision": "NOT_VERIFIED",
+  "training_data_files_included": true
+}

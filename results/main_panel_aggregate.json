@@ -1,0 +1,106 @@
+{
+  "status": "CURATED_AGGREGATE_NUMBERS_FROM_FROZEN_INTERNAL_STATISTICS",
+  "n_cases_per_main_model": 540,
+  "main_models": [
+    {
+      "model": "Base",
+      "MCS": 4.2407407407407405,
+      "GPHR": 0.46296296296296297,
+      "CPC": 0.2111111111111111,
+      "GFR": 0.737037037037037,
+      "MPSR": 0.36666666666666664,
+      "CPC_correct": 19
+    },
+    {
+      "model": "InternLM",
+      "MCS": 4.424074074074074,
+      "GPHR": 0.5518518518518518,
+      "CPC": 0.2111111111111111,
+      "GFR": 0.7925925925925926,
+      "MPSR": 0.3962962962962963,
+      "CPC_correct": 19
+    },
+    {
+      "model": "MindChat",
+      "MCS": 3.6259259259259258,
+      "GPHR": 0.27037037037037037,
+      "CPC": 0.044444444444444446,
+      "GFR": 0.9277777777777778,
+      "MPSR": 0.39444444444444443,
+      "CPC_correct": 4
+    },
+    {
+      "model": "DeepSeek",
+      "MCS": 6.044444444444444,
+      "GPHR": 0.8222222222222222,
+      "CPC": 0.6777777777777778,
+      "GFR": 0.024074074074074074,
+      "MPSR": 0.10740740740740741,
+      "CPC_correct": 61
+    },
+    {
+      "model": "Qwen3.8",
+      "MCS": 6.746296296296296,
+      "GPHR": 0.912962962962963,
+      "CPC": 0.8777777777777778,
+      "GFR": 0.003703703703703704,
+      "MPSR": 0.046296296296296294,
+      "CPC_correct": 79
+    },
+    {
+      "model": "Final4K",
+      "MCS": 7.642592592592592,
+      "GPHR": 0.9851851851851852,
+      "CPC": 1.0,
+      "GFR": 0.003703703703703704,
+      "MPSR": 0.003703703703703704,
+      "CPC_correct": 90
+    },
+    {
+      "model": "Final6K",
+      "MCS": 7.603703703703704,
+      "GPHR": 0.9777777777777777,
+      "CPC": 0.9888888888888889,
+      "GFR": 0.0,
+      "MPSR": 0.003703703703703704,
+      "CPC_correct": 89
+    }
+  ],
+  "prespecified_comparisons": [
+    {
+      "comparison": "Final4K vs Base",
+      "delta_MCS": 3.401851851851852,
+      "CI95_low": 3.259259259259259,
+      "CI95_high": 3.5407407407407407,
+      "improved": 511,
+      "tied": 26,
+      "declined": 3,
+      "delta_GPHR": 0.5222222222222221,
+      "delta_CPC": 0.7888888888888889
+    },
+    {
+      "comparison": "Final4K vs Qwen3.8",
+      "delta_MCS": 0.8962962962962963,
+      "CI95_low": 0.7351851851851852,
+      "CI95_high": 1.0574074074074074,
+      "improved": 280,
+      "tied": 158,
+      "declined": 102,
+      "delta_GPHR": 0.07222222222222219,
+      "delta_CPC": 0.12222222222222223
+    },
+    {
+      "comparison": "Final4K vs Final6K",
+      "delta_MCS": 0.03888888888888889,
+      "CI95_low": -0.07222222222222222,
+      "CI95_high": 0.15,
+      "improved": 126,
+      "tied": 282,
+      "declined": 132,
+      "delta_GPHR": 0.007407407407407418,
+      "delta_CPC": 0.011111111111111072
+    }
+  ],
+  "caveat": "Aggregate-only reported statistics; not raw predictions, response-level scores, source texts, or a re-computation from public JSONL.",
+  "source_archive": "private frozen Core statistical analysis (source remains outside repository)"
+}

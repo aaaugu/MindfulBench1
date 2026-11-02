@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MindfulBench response submission",
+  "type": "object",
+  "required": [
+    "case_id",
+    "response"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "response": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

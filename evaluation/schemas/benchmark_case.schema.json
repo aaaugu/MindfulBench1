@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MindfulBench public case",
+  "type": "object",
+  "required": [
+    "case_id",
+    "split",
+    "subset",
+    "pair_id",
+    "pair_role",
+    "user_1",
+    "assistant_1",
+    "user_2",
+    "gold_strategy",
+    "nearest_confusable",
+    "latent_control_rule",
+    "decisive_behavioral_evidence",
+    "why_gold_over_neighbor",
+    "generic_fallback_trap",
+    "must_do",
+    "not_enough",
+    "flip_condition",
+    "stance_risk_note",
+    "source_type",
+    "legacy_case_id"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "DEV",
+        "TEST"
+      ]
+    },
+    "subset": {
+      "enum": [
+        "implicit",
+        "competing",
+        "minimal_contrast"
+      ]
+    },
+    "pair_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pair_role": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "user_1": {
+      "type": "string"
+    },
+    "assistant_1": {
+      "type": "string"
+    },
+    "user_2": {
+      "type": "string"
+    },
+    "gold_strategy": {
+      "enum": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S7"
+      ]
+    },
+    "nearest_confusable": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "latent_control_rule": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decisive_behavioral_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "why_gold_over_neighbor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generic_fallback_trap": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "must_do": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "not_enough": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "flip_condition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stance_risk_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_type": {
+      "enum": [
+        "theory_anchored_fresh",
+        "real_source_adapted"
+      ]
+    },
+    "legacy_case_id": {
+      "type": "string"
+    },
+    "legacy_pair_id": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

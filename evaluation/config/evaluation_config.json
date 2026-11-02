@@ -1,0 +1,9 @@
+{
+  "historical_judge_model": "z-ai/glm-5.3-flash",
+  "temperature": 0,
+  "top_p": 1,
+  "reasoning_effort": "low",
+  "response_format": "json_object",
+  "max_tokens": 1600,
+  "note": "Historical runner defaults reflect the original execution environment. Endpoint/model can be overridden on the command line or via environment variables."
+}

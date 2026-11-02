@@ -1,0 +1,10 @@
+{
+  "project": "MindCINS",
+  "candidate_version": "RC4-full-data",
+  "actual_publication_status": "PREPARED_FOR_USER_UPLOAD",
+  "mode": "full_data_repository_candidate",
+  "data_files_included": true,
+  "nested_4k_in_6k": true,
+  "license_status": "NOT_DETERMINED",
+  "trained_adapter_weights_included": false
+}
