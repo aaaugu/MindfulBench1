@@ -28,9 +28,17 @@ The current DEV180 and TEST540 draft files share a curated candidate schema: dia
 
 Raw source IDs, raw PsyQA records/provenance, authoring-risk notes beyond the released stance field, QC/audit logs, and internal closure metadata are not included.
 
-## Held-out interpretation
+## Held-out Interpretation
 
-TEST540 was held out during the reported study: it was not used for MindCINS authoring, training-recipe tuning, checkpoint selection, evaluator/rubric tuning, model-panel revision based on held-out results, or post-hoc repair. Its Gold is included in the full-data private staging candidate as a proposed post-evaluation release, subject to final release authorization and source terms. Future users should not tune on TEST540 Gold if they want a comparison analogous to the paper's held-out setting.
+The TEST540 split was reserved for evaluation during the original study and was not used for MindCINS instance authoring, training-recipe tuning, checkpoint selection, or evaluator tuning before the main evaluation.
+
+Following the original evaluation, the test-set Gold annotations were released publicly as part of the MindfulBench repository:
+
+https://github.com/aaaugu/MindfulBench1
+
+The publicly available TEST540 Gold labels support transparency, case-level inspection, and retrospective evaluation. However, future systems developed with access to these annotations cannot be considered evaluated under the same blind held-out conditions as the original study.
+
+The release does not imply unrestricted redistribution rights for third-party source-derived materials.
 
 ## Intended use
 
