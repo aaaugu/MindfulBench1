@@ -1,6 +1,12 @@
 # MindfulBench + MindCINS — Full Research Resource (RC4)
 
-**Full-data repository candidate, prepared 2026-11-02.** This package includes the dataset, structured Gold labels, training resources, evaluation scripts and descriptive statistics. It has not been assigned a public repository URL, DOI, or a blanket reuse license by this archive.
+This public repository provides the MindfulBench benchmark, structured Gold annotations, MindCINS training resources, evaluation scripts, and reported aggregate results.
+
+Repository: https://github.com/aaaugu/MindfulBench1
+
+The release includes 720 Chinese diagnostic cases (180 development and 540 test cases) and the MindCINS 4K/6K training and validation resources. The test-set Gold annotations were made publicly available after the original held-out evaluation. Consequently, future evaluations using these publicly accessible labels should not be considered equivalent to the original blind held-out evaluation.
+
+No DOI or unrestricted reuse license is claimed. Third-party source-data permissions are described separately in the repository documentation.
 
 MindfulBench is a 720-case Chinese, three-message, relation-conditioned diagnostic benchmark for mindfulness-informed psychological-support dialogue. Its benchmark-defined targets and functional criteria do not imply clinically optimal treatment or safe autonomous deployment.
 
